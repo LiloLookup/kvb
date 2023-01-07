@@ -1,20 +1,23 @@
 {
-  "compilerOptions": {
-    "lib": [
-      "ESNext"
-    ],
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "nodenext",
-    "strict": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "jsx": "preserve",
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
-  }
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@core/api": [
+                "../../packages/api/src"
+            ],
+            "@core/kvb": [
+                "../../packages/kvb/src"
+            ],
+            "@core/stats": [
+                "../../packages/stats/src"
+            ],
+            "@core/notifications": [
+                "../../packages/notifications/src"
+            ],
+            "@core/app": [
+                "../../apps/lilo/src"
+            ]
+        },
+        "esModuleInterop": true
+    }
 }
